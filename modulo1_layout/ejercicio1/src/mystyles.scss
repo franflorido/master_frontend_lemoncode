@@ -1,0 +1,41 @@
+@use "base" as *;
+
+.container-1 {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.box {
+  padding: 3rem;
+  border: 1px solid black;
+  border-radius: 0.5rem;
+  display: inline-block;
+}
+
+.base-color {
+  background-color: $primary-color;
+}
+
+@function filter-image($amount) {
+  @return brightness($amount * 2) sepia($amount);
+}
+
+$i: 1;
+$j: 4;
+
+@for $i from 1 to 5 {
+  .darken-#{$i} {
+    background: darken($primary-color, $i * 5%);
+  }
+  $i: $i + 1;
+}
+
+@for $i from 1 to 5 {
+  .lighten-#{$i} {
+    background: lighten($primary-color, $i * 5%);
+  }
+  $i: $i + 1;
+}
