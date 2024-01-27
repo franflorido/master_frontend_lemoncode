@@ -1,0 +1,37 @@
+@import "theme-1.scss";
+
+.boton {
+  padding: 25px;
+  border: 1px solid #000000;
+  border-radius: 0.5rem;
+  margin-right: 90%;
+  display: block;
+}
+
+.boton-1 {
+  @extend .boton;
+  background-color: $primary-color;
+}
+
+.boton-2 {
+  @extend .boton;
+  background-color: darken($primary-color, 20%);
+}
+
+.boton-3 {
+  @extend .boton;
+  background-color: lighten($primary-color, 20%);
+}
+
+.texto-1 {
+  font-family: $font-1;
+}
+
+.texto-2 {
+  font-family: $font-2;
+}
+
+.boton-4 {
+  @extend .boton;
+  @include shadow-effect($shadow-pos);
+}
