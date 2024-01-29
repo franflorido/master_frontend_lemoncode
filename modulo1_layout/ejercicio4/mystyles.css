@@ -1,0 +1,45 @@
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  max-width: 100%;
+  grid-gap: 20px;
+  align-items: stretch;
+}
+.container > article {
+  border: 1px solid #ccc;
+  box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+}
+.container > article img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+.text {
+  padding: 0 20px 20px;
+}
+
+.Date {
+  border: 0;
+  padding: 0 180px 0px;
+  width: 100%;
+}
+
+.Date > span {
+  color: lightcoral;
+}
+.text > button {
+  background: gray;
+  border: 0;
+  color: white;
+  padding: 10px;
+  width: 100%;
+}
+
+.text > button:hover {
+  background: rgb(46, 46, 46);
+  border: 0;
+  color: white;
+  padding: 10px;
+  width: 100%;
+}
