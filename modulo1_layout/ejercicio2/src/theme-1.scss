@@ -1,8 +1,10 @@
 $primary-color: blue;
-$secondary-color: red;
+$secondary-color: green;
+$third-color: yellow;
 $font-1: sans-serif;
 $font-2: "Courier New", Courier, monospace;
 $shadow-pos: -5px;
+$border-radious: 0;
 
 @mixin shadow-effect($position: 5px) {
   box-shadow: $position 6px 5px rgba(0, 0, 0, 0.69);
