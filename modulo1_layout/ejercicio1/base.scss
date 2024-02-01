@@ -1,0 +1,26 @@
+$primary-color: red;
+$secondary-color: blue;
+$third-color: rgb(12, 165, 63);
+$letter-color: white;
+$dark-letter-color: yellow;
+$light-letter-color: black;
+
+@mixin darken($percentage: 5%, $primary-color: $primary-color) {
+  @for $i from 1 to 5 {
+    .darken-#{$i} {
+      background: darken($primary-color, ($i + 2) * $percentage);
+      color: $dark-letter-color;
+    }
+    $i: $i + 1;
+  }
+}
+
+@mixin lighten($percentage: 5%, $primary-color: $primary-color) {
+  @for $i from 1 to 5 {
+    .lighten-#{$i} {
+      background: lighten($primary-color, ($i + 1) * $percentage);
+      color: $light-letter-color;
+    }
+    $i: $i + 1;
+  }
+}

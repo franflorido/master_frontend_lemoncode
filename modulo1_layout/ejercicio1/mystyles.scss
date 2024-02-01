@@ -1,0 +1,46 @@
+@use "base" as base;
+
+/* Tengo que usar la funcion @mixing de sass (definirla en base e importarla) */
+
+.container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  grid-gap: 10px;
+}
+
+.box {
+  padding: 3rem;
+  border: 1px solid black;
+  border-radius: 0.5rem;
+}
+
+.base-color {
+  background-color: base.$primary-color;
+  color: base.$letter-color;
+}
+
+.base-color-2 {
+  background-color: base.$secondary-color;
+  color: base.$letter-color;
+}
+
+.base-color-3 {
+  background-color: base.$third-color;
+  color: base.$letter-color;
+}
+
+.container-1 {
+  @include base.darken(5%, base.$primary-color);
+  @include base.lighten(8%, base.$primary-color);
+}
+
+.container-2 {
+  @include base.darken(5%, base.$secondary-color);
+  @include base.lighten(8%, base.$secondary-color);
+}
+
+.container-3 {
+  @include base.darken(3%, base.$third-color);
+  @include base.lighten(8%, base.$third-color);
+}

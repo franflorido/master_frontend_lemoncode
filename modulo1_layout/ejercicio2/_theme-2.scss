@@ -5,7 +5,3 @@ $font-1: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 $font-2: "Times New Roman", Times, serif;
 $shadow-pos: 5px;
 $border-radious: 1rem;
-
-@mixin shadow-effect($position: 5px) {
-  box-shadow: $position 6px 5px rgba(0, 0, 0, 0.69);
-}
