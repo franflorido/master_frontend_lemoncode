@@ -28,3 +28,29 @@ En este ejercicio se pide crear la barra de navegación de la imagen del enuncia
 
 En este ejercicio se pide crear un elemento de tipo card con Grid CSS.
 Las alineaciones deberán hacerse con esta característica, pero el html es totalmente abierto
+
+## Prueba de los ejercicios
+
+Para comprobar el funcionamiento de los ejercicios se deben seguir los siguientes pasos.
+
+1 - Clonar el repositorio en local 
+
+```
+git clone https://github.com/franflorido/master_frontend_lemoncode.git
+```
+2 - En la carpeta principal ejecutar el comando install de npm 
+
+```
+npm install
+```
+3 - Ejecutar el comando run de npm seguido del ejercicio (ej1, ej2, ej3, ej3)
+
+```
+npm run ej1
+```
+
+Nota: Para probar el funcionamiento del ejercicio 2 habra que modificar el @use del archivo "mystyles.scss" que se encuentra en la linea 1
+```
+@use "theme-1.scss" as theme;
+@use "theme-2.scss" as theme;
+```
