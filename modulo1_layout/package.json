@@ -10,7 +10,7 @@
     "ej4": "parcel ejercicio4/index.html"
   },
   "keywords": [],
-  "author": "",
+  "author": "Francisco Florido Valero",
   "license": "ISC",
   "devDependencies": {
     "@parcel/transformer-sass": "^2.11.0",
