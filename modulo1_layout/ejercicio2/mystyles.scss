@@ -1,10 +1,10 @@
-@use "theme-2.scss" as theme;
+@use "theme-1.scss" as theme;
 @use "mixins.scss" as mixins;
 
 .boton {
   padding: 50px;
   border: 1px solid #000000;
-  border-radius: $border-radious;
+  border-radius: theme.$border-radious;
   width: 50px;
   display: block;
   text-align: center;
@@ -17,23 +17,23 @@
 
 .boton-2 {
   @extend .boton;
-  background-color: $secondary-color;
+  background-color: theme.$secondary-color;
 }
 
 .boton-3 {
   @extend .boton;
-  background-color: $third-color;
+  background-color: theme.$third-color;
 }
 
 .texto-1 {
-  font-family: $font-1;
+  font-family: theme.$font-1;
 }
 
 .texto-2 {
-  font-family: $font-2;
+  font-family: theme.$font-2;
 }
 
 .boton-4 {
   @extend .boton;
-  @include mixins.shadow-effect($shadow-pos);
+  @include mixins.shadow-effect(theme.$shadow-pos);
 }
