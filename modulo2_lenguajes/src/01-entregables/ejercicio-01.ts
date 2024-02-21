@@ -1,7 +1,10 @@
 console.log("************** DELIVERABLE 01 *********************");
 
 // Head
-const head = <E>(arr: Array<E>): E => arr[0];
+const head = <E>(arr: Array<E>): E => {
+  const [first] = arr;
+  return first;
+};
 console.log("HEAD result: ", head([0, 1, 2]));
 
 // Tail
