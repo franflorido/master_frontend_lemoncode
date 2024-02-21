@@ -48,6 +48,11 @@ npm install
 ```
 npm run ej1
 ```
+4 - En el navegador ir abrir la siguiente direccion
+
+```
+http://localhost:1234
+```
 
 Nota: Para probar el funcionamiento del ejercicio 2 habra que modificar el @use del archivo "mystyles.scss" que se encuentra en la linea 1
 ```
