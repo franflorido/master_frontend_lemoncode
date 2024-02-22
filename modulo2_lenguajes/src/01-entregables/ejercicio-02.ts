@@ -8,14 +8,10 @@ console.log("Resultado de Concat: ", concat([0, 1, 2], [3, 4, 5, 6, 7]));
 // OPTIONAL Excercice
 
 const multipleConcat = <E>(...collection: Array<Array<E>>): Array<E> => {
-  let result: Array<E> = [];
-  for (const item of collection) {
-    result = [...result, ...item];
-  }
-  return result;
+  return collection.reduce((res, next) => concat(res, next));
 };
 
 console.log(
   "Resultado de multiple Concat: ",
-  multipleConcat([0, 1, 2, 3], [4, 5, 6], [7, 8, 9], [10])
+  multipleConcat([0, 1, 2, 3], [4, 5, 6], [7, 8, 9], [10], [11, 12, "comida"])
 );

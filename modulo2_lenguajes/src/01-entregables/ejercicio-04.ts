@@ -6,13 +6,8 @@ interface Books {
 }
 
 function isBookRead(books: Array<Books>, titleToSearch: string): boolean {
-  let leido: boolean = false;
-  for (const item in books) {
-    if (books[item]["title"] == titleToSearch) {
-      leido = books[item]["isRead"];
-    }
-  }
-  return leido;
+  const isBook = books.find((element) => element.title === titleToSearch);
+  return isBook ? isBook.isRead : false;
 }
 
 const books: Array<Books> = [

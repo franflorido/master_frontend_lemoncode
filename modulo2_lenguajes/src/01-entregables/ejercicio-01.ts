@@ -21,5 +21,5 @@ const init = <E>(arr: Array<E>): Array<E> => {
 console.log("INIT result: ", init([0, 1, 2, 3, 4]));
 
 // Last
-const last = <E>(arr: Array<E>): E => arr.slice(-1)[0];
+const last = <E>(arr: Array<E>): E => arr[arr.length - 1];
 console.log("LAST result: ", last([0, 1, 2, 3, 4]));

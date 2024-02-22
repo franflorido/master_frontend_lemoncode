@@ -2,7 +2,6 @@ console.log("************** DELIVERABLE 05 *********************");
 
 class SlothMachine {
   NumMonedas: number;
-  result: Array<boolean>;
 
   constructor() {
     this.NumMonedas = 0;
@@ -18,10 +17,8 @@ class SlothMachine {
 
   public play(): void {
     this.NumMonedas++;
-    let ruleta: Array<boolean> = this.ruleta();
-    let result: boolean = this.checker(ruleta);
 
-    if (result) {
+    if (this.checker(this.ruleta())) {
       console.log(`Congratulations!!!. You won ${this.NumMonedas} coins!!`);
       this.NumMonedas = 0;
     } else {
