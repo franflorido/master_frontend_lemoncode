@@ -143,4 +143,5 @@ dist
 ### My files to ignore ###
 *.docx
 *.pdf
+*.txt
 .parcel-cache
