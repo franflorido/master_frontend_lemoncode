@@ -7,6 +7,7 @@
   "scripts": {
     "type-check": "tsc --noEmit",
     "build:dev": "webpack --config webpack.dev.js",
+    "build": "run-p -l type-check build:prod",
     "build:prod": "webpack --config webpack.prod.js",
     "build:perf": "webpack --config webpack.perf.js",
     "start:dev": "webpack serve --config webpack.dev.js",

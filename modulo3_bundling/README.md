@@ -39,6 +39,12 @@ npm run build
 npm start
 ```
 
+5- Para ejecutar el webpack service y ver el check de tipos:
+
+```
+npm run type-check
+```
+
 
 ## Ejercicio Opcional:
 
@@ -95,7 +101,13 @@ npm run build:prod
 npm run build:perf
 ```
 
-6- Para ejecutar el webpack service y ver el funcionamiento del proyecto ejecutar el comando:
+6- Para ejecutar el webpack service y ver el check de tipos:
+
+```
+npm run type-check
+```
+
+7- Para ejecutar el webpack service y ver el funcionamiento del proyecto ejecutar el comando:
 
 ```
 npm start
