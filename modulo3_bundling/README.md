@@ -48,7 +48,7 @@ npm run type-check
 
 ## Ejercicio Opcional:
 
-### Empaquetado Webpack
+### Empaquetado Webpack y parcel
 
 Implementar una aplicación simple que:
 
