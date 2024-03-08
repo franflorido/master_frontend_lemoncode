@@ -1,0 +1,1 @@
+{"mappings":"AAEA","sources":["src/mystyles.scss"],"sourcesContent":["$back-color: lightgreen;\r\n\r\n.red-background {\r\n  background-color: $back-color;\r\n}\r\n"],"names":[],"version":3,"file":"index.css.map"}
