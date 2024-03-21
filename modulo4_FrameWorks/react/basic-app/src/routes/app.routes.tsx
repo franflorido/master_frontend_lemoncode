@@ -1,6 +1,6 @@
 import React from "react";
 import { HashRouter, Route, Routes } from "react-router-dom";
-import { LoginScene, ListScene, DetailScene } from "../scenes";
+import { LoginScene, ListScene, DetailScene } from "@/scenes";
 import { switchRoutes } from "./routes";
 
 export const AppRouter = () => {

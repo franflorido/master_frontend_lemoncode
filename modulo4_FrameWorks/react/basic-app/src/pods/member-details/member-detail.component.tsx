@@ -4,10 +4,8 @@ import Card from "@mui/material/Card";
 import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 import CardActions from "@mui/material/CardActions";
-import CardHeader from "@mui/material/CardHeader";
 import CardContent from "@mui/material/CardContent";
 import Button from "@mui/material/Button";
-import TextFieldMUI from "@mui/material/TextField";
 import { MemberCenteredLayout } from "./member-detail.layout";
 
 interface MemberDetailEntity {

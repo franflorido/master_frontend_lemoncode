@@ -1,5 +1,5 @@
 import React from "react";
-import { MembersContext } from "../../app";
+import { MembersContext } from "@/app";
 import { ListTableComponent } from "./member-list.toolbar";
 import { ListMemberComponent } from "./members-list.table";
 
