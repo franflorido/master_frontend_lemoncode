@@ -1,4 +1,4 @@
-import React, { PropsWithChildren } from "react";
+import React from "react";
 import { AppRouter } from "./routes/app.routes";
 
 export interface MemberEntity {
@@ -22,7 +22,7 @@ const MembersProvider: React.FC<React.PropsWithChildren> = ({ children }) => {
   const [filtro, setFiltro] = React.useState("");
 
   React.useEffect(() => {
-    fetch(`https://api.github.com/orgs/${organization}/members`) //https://api.github.com/orgs/${organization}/members
+    fetch(`https://api.github.com/orgs/${organization}/members`)
       .then((response) => response.json())
       .then(setMembers);
   }, [filtro]);
