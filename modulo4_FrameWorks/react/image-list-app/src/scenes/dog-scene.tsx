@@ -1,6 +1,23 @@
 import React from "react";
 import { DogListComponent } from "@/pods/dog-component";
 
-export const DogScene: React.FC = () => {
-  return <DogListComponent />;
+interface PictureInfo {
+  id: string;
+  picUrl: string;
+  title: string;
+  selected?: boolean;
+}
+
+interface Props {
+  selectedImages: PictureInfo[];
+  toggleImageSelection: (image:PictureInfo) => void;
+  deleteImagesfromCarrito: (image:PictureInfo) => void;
+}
+
+export const DogScene: React.FC<Props> = (props) => {
+
+  const {selectedImages, toggleImageSelection, deleteImagesfromCarrito} = props
+  return (
+  <DogListComponent selectedImages={selectedImages} toggleImageSelection={toggleImageSelection} deleteImagesfromCarrito={deleteImagesfromCarrito}/>
+  );
 };

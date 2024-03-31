@@ -1,0 +1,25 @@
+.main-page-component {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    height: 100%;
+}
+
+.splitter {
+    border-left: 3px solid black;
+    height: 100vh;
+}
+
+.list-user-list-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    border-radius: 0.5rem;
+    height: 350px;
+    
+  }
+
+.list-user-list-container > img {
+    width: 80px;
+}

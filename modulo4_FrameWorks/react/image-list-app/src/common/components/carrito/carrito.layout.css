@@ -1,0 +1,11 @@
+.list-user-list-container-carrito {
+    display: flex;
+    flex-direction: column;
+    border-radius: 0.5rem;
+    width: 500px;
+  }
+  
+
+.list-user-list-container-carrito > img {
+    width: 100px;
+}
