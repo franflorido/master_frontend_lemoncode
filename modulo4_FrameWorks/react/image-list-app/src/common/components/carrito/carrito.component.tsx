@@ -1,6 +1,6 @@
 import React from "react";
-import { PictureInfo } from "../main-page/main-page.vm";
 import "./carrito.layout.css"
+import { PictureInfo } from "../main-page/main-page.vm";
 import { ImgCarrito } from "./carrito.image-card";
 
 interface Props {

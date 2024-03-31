@@ -1,6 +1,4 @@
 import * as React from 'react';
-import FormControlLabel from '@mui/material/FormControlLabel';
-import Checkbox from '@mui/material/Checkbox';
 import { PictureInfo } from "./carrito.vm";
 
 interface Props {

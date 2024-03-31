@@ -1,12 +1,6 @@
 import React from "react";
 import { DogListComponent } from "@/pods/dog-component";
-
-interface PictureInfo {
-  id: string;
-  picUrl: string;
-  title: string;
-  selected?: boolean;
-}
+import { PictureInfo } from "./scenes.vm";
 
 interface Props {
   selectedImages: PictureInfo[];

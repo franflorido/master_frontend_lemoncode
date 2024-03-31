@@ -1,13 +1,8 @@
 import React from "react";
 import { MainPageComponent } from "@/common/components/main-page";
 import data from "@/common/data/dogs-data.json"
+import { PictureInfo } from "./dog-component.vm";
 
-interface PictureInfo {
-  id: string;
-  picUrl: string;
-  title: string;
-  selected?: boolean;
-}
 
 interface Props {
   selectedImages: PictureInfo[];
