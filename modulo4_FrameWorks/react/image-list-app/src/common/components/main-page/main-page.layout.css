@@ -7,7 +7,7 @@
 
 .splitter {
     border-left: 3px solid black;
-    height: 100vh;
+    height: 93vh;
 }
 
 .list-user-list-container {
@@ -16,10 +16,5 @@
     flex-wrap: wrap;
     gap: 10px;
     border-radius: 0.5rem;
-    height: 350px;
-    
+    height: 350px;   
   }
-
-.list-user-list-container > img {
-    width: 80px;
-}

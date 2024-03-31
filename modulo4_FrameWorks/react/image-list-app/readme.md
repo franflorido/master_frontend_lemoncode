@@ -1,118 +1,36 @@
-# 04 Details
+# Image List App Excercice
 
-## Summary
+## Resumen
 
-This example takes the _03-list_ example as a starting point.
+Como miembro de un portal de un banco de imagenes nos piden tener un carrito de la compra siempre
+visible. El usuario tiene una area principal en la que se muestra una página con imagenes, cada imagen
+tiene un checkbox que permite seleccionarlo y añadirlo al carrito de la compra (cada imagen tiene un ID).
 
-We are going to show the detail of a Github user: for them
-we keep the id of the user we chose in the list,
-call the Github API to get its details, and display them in a component.
-display them in a component.
+- Para simplificar vamos a tener dos páginas distintas con imagenes seleccionables - Al derecha
+(fuera de React-router) mostramos un carrito de la compra.
 
-## Step by Step Guide
+- Cada vez que el usuario selecciona una imagen en una de las páginas se añade al carrito. - Si un
+usuario borra la imagen del carrito se deselecciona de la página (en caso de que esté activa).
 
-- First we copy the previous example, and do an _npm install_.
+
+## Paso a Paso
+
+Para comprobar el funcionamiento de los ejercicios se deben seguir los siguientes pasos.
+
+1 - Clonar el repositorio en local
+
+```
+git clone https://github.com/franflorido/master_frontend_lemoncode.git
+```
+
+2 - En la carpeta del ejercicio hacemos un _npm install_ para instalar los paquetes
 
 ```bash
 npm install
 ```
 
-- If we want to see what kind of data we are going to handle, we can open the web browser and see what Github's Rest API returns.
+3 - Para montar el servidor de desarrollo y comprobar el funcionamiento hacemos un  un _npm start_
 
 ```bash
-https://api.github.com/users/brauliodiez
+npm start
 ```
-
-EXCERCISE OPTION
-> With what you have done in the previous examples you would be able to set up
-> this page by yourself, I advise you to pause this > exercise and try it out.
-> exercise and try it out.
-
-- We are going to create an interface to have typed to show the details of a member.
-
-_./src/detail.tsx_
-
-```diff
-import React from "react";
-import { Link } from "react-router-dom";
-
-+ interface MemberDetailEntity {
-+   id : string;
-+   login: string;
-+   name: string;
-+   company: string;
-+   bio: string;
-+ }
-+
-+ const createDefaultMemberDetail = () => ({
-+   id: '',
-+   login: '',
-+   name: '',
-+   company: '',
-+   bio: '',
-+ })
-+
-export const DetailPage: React.FC = () => {
-+  const [member, setMember] = React.useState<MemberDetailEntity>(createDefaultMemberDetail());
-  const { id } = useParams();
-
-  return (
-    <>
-      <h2>Hello from Detail page</h2>
-      <h3>User Id: {id}</h3>
-      <Link to="/list">Back to list page</Link>
-    </>
-  );
-};
-```
-
-- Let's do the data loading:
-
-_./src/detail.tsx_
-
-```diff
-export const DetailPage: React.FC = () => {
-  const [member, setMember] = React.useState<MemberDetailEntity>();
-  const { id } = useParams();
-
-+  React.useEffect(() => {
-+    fetch(`https://api.github.com/users/${id}`)
-+      .then((response) => response.json())
-+      .then((json) => setMember(json));
-+  }, []);
-
-
-  return (
-    <>
-      <h2>Hello from Detail page</h2>
-      <h3>User Id: {id}</h3>
-      <Link to="/list">Back to list page</Link>
-    </>
-  );
-};
-```
-
-- Let's show the data:
-
-_./src/detail.tsx_
-
-```diff
-export const DetailPage: React.FC = () => {
-  const [member, setMember] = React.useState<MemberDetailEntity>();
-  const { id } = useParams();
-
-  return (
-    <>
-      <h2>Hello from Detail page</h2>
--      <h3>User Id: {id}</h3>
-+      <p> id: {member.id}</p>
-+      <p> login: {member.login}</p>
-+      <p> name: {member.name}</p>
-+      <p> company: {member.company}</p>
-+      <p> bio: {member.bio}</p>
-      <Link to="/list">Back to list page</Link>
-    </>
-  );
-};
-```
-

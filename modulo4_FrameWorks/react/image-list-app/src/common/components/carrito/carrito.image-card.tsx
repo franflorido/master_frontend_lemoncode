@@ -1,4 +1,6 @@
 import * as React from 'react';
+import IconButton from '@mui/material/IconButton';
+import DeleteIcon from '@mui/icons-material/Delete';
 import { PictureInfo } from "./carrito.vm";
 
 interface Props {
@@ -15,10 +17,13 @@ export const ImgCarrito: React.FC<Props> = (props) => {
     <img
       src={animal.picUrl}
       alt={animal.id}
-      style={{ width: '100px', height: '100px', cursor: 'pointer' }}
+      style={{ width: '80px', height: '80px', cursor: 'pointer' }}
       onClick={onClick}
     />
-    <input type="checkbox" onClick={onClick} />
+    { animal.title}
+    <IconButton aria-label="delete">
+      <DeleteIcon onClick={onClick} />
+    </IconButton>
   </div>
   );
 }

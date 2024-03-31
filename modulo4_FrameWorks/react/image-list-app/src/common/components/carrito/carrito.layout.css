@@ -2,10 +2,5 @@
     display: flex;
     flex-direction: column;
     border-radius: 0.5rem;
-    width: 500px;
+    width: 300px;
   }
-  
-
-.list-user-list-container-carrito > img {
-    width: 100px;
-}
