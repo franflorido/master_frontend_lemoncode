@@ -19,8 +19,10 @@ export const MainPageComponent: React.FC<Props> = (props) => {
 
   return (
     <>
-    <Button variant="outlined" onClick={()=>navigate("/puppies")}>Puppies</Button>
-    <Button variant="outlined" onClick={()=>navigate("/kitties")}>Kitties</Button>
+    <div className="buttons">
+      <Button variant="outlined" onClick={()=>navigate("/puppies")}>Puppies</Button>
+      <Button variant="outlined" onClick={()=>navigate("/kitties")}>Kitties</Button>
+    </div>
     <div className="main-page-component">
       <ListAnimalComponent animals={animals} selected={selectedImages} onImageClick= {toggleImageSelection} />
       <div className="splitter"></div>

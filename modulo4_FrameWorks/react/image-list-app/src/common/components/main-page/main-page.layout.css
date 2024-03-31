@@ -10,6 +10,11 @@
     height: 93vh;
 }
 
+.buttons {
+    max-width: fit-content;
+    margin-bottom: 10px;
+}
+
 .list-user-list-container {
     display: flex;
     flex-direction: row;

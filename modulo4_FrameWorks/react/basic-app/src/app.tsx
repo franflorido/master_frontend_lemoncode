@@ -1,7 +1,7 @@
 import React from "react";
 import { AppRouter } from "./routes/app.routes";
 
-export interface MemberEntity {
+interface MemberEntity {
   id: number;
   login: string;
   avatar_url: string;

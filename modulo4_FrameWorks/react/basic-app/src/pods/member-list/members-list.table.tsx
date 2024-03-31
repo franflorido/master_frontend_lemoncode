@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { MemberEntity } from "@/app";
+import { MemberEntity } from "./member-list.vm";
 import { Pagination } from "@/common/components";
 
 interface Props {

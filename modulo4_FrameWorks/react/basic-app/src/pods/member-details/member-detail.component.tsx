@@ -7,15 +7,8 @@ import CardActions from "@mui/material/CardActions";
 import CardContent from "@mui/material/CardContent";
 import Button from "@mui/material/Button";
 import { MemberCenteredLayout } from "./member-detail.layout";
+import { MemberDetailEntity } from "./member-detail.vm";
 
-interface MemberDetailEntity {
-  id: string;
-  avatar_url: string;
-  login: string;
-  name: string;
-  company: string;
-  bio: string;
-}
 
 const createDefaultMemberDetail = () => ({
   id: "",
