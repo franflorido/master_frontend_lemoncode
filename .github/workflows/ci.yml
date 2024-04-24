@@ -15,19 +15,3 @@ jobs:
         run: npm ci
       - name: Tests
         run: npm test
-
-on: pull-request
-
-jobs: 
-  ci:
-    runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: ./modulo5_UnitTesting/ejercicio-unit-testing/src
-    steps:
-      - name: Checkout Repo
-        uses: actions/checkout@v4
-      - name: Install
-        run: npm ci
-      - name: Tests
-        run: npm test
