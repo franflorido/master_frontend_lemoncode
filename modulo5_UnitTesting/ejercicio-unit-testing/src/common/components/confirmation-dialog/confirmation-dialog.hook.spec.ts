@@ -40,7 +40,7 @@ describe("common/Confirmation-DialogHook", () => {
         expect(result.current.isOpen).toEqual(true)
         expect(result.current.itemToDelete).toEqual(LookUpItem)
     });
-    it("it should set isOpen to flase", () => {
+    it("it should set isOpen = flase", () => {
         // Arrange
         const LookUpItem = {id:"test", name:"test"}
         
