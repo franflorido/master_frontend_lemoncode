@@ -4,7 +4,7 @@ import userEvent from '@testing-library/user-event';
 import { ConfirmationDialogComponent } from './confirmation-dialog.component';
 
 describe('common/Confirmation-DialogComponent', () => {
-    it('should display a Dialog, a button with text "Acept" and a button with text "Close" also the title and children inside de dialog tittle and content', () => {
+    it('should display a Dialog with a button with text "Acept", a button with text "Close", the title and the children inside de dialog tittle and content', () => {
       // Arrange
       const props = {
         isOpen:true,
