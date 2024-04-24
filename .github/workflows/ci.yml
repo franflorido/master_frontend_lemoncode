@@ -1,5 +1,5 @@
 name: CI Workflow
-working-directory: ./master_frontend_lemoncode\modulo5_UnitTesting\ejercicio-unit-testing\src
+
 on: push
 
 jobs: 
@@ -8,7 +8,10 @@ jobs:
     steps:
       - name: Checkout Repo
         uses: actions/checkout@v4
+        working-directory: ./master_frontend_lemoncode\modulo5_UnitTesting\ejercicio-unit-testing\src
       - name: Install
         run: npm ci
+        working-directory: ./master_frontend_lemoncode\modulo5_UnitTesting\ejercicio-unit-testing\src
       - name: Tests
         run: npm test
+        working-directory: ./master_frontend_lemoncode\modulo5_UnitTesting\ejercicio-unit-testing\src
