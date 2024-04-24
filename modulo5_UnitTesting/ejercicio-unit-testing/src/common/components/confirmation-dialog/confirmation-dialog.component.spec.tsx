@@ -4,18 +4,18 @@ import userEvent from '@testing-library/user-event';
 import { ConfirmationDialogComponent } from './confirmation-dialog.component';
 
 describe('common/Confirmation-DialogComponent', () => {
-    it('should display a Dialog, a button with text "Acept" and a button with text "Close"', () => {
+    it('should display a Dialog, a button with text "Acept" and a button with text "Close" also the title and children inside de dialog tittle and content', () => {
       // Arrange
       const props = {
         isOpen:true,
         onAccept: () => {},
         onClose: () => {},
-        title: "test",
+        title: "Welcome",
         labels: {
             closeButton: "Close",
             acceptButton: "Acept",
           },
-        children: "test",
+        children: "ChildrenTest",
       };
   
       // Act
@@ -27,12 +27,15 @@ describe('common/Confirmation-DialogComponent', () => {
       const buttonAcceptElement = screen.getByRole('button', {
         name: /Acept/i,
       });
-      const dialogElement = screen.getByRole('dialog');
+      const dialog = screen.getByRole('dialog');
+      const dialogElements = within(dialog);
   
       // Assert
       expect(buttonCloseElement).toBeInTheDocument();
       expect(buttonAcceptElement).toBeInTheDocument();
-      expect(dialogElement).toBeInTheDocument();
+      expect(dialog).toBeInTheDocument();
+      expect(dialogElements.getByText("Welcome")).toBeInTheDocument();
+      expect(dialogElements.getByText("ChildrenTest")).toBeInTheDocument();
     });
     it('should call onClose when it clicks on "Close" button', async () => {
       // Arrange
