@@ -1,9 +1,5 @@
-defaults:
-  run:
-    working-directory: ./master_frontend_lemoncode\modulo5_UnitTesting\ejercicio-unit-testing\src
-
 name: CI Workflow
-
+working-directory: ./master_frontend_lemoncode\modulo5_UnitTesting\ejercicio-unit-testing\src
 on: push
 
 jobs: 
