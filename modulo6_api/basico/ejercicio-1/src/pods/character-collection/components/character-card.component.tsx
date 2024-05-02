@@ -39,6 +39,7 @@ export const CharacterCard: React.FunctionComponent<Props> = (props) => {
         <IconButton onClick={() => onEdit(character.id)}>
           <InfoIcon />
         </IconButton>
+        More Info
       </CardActions>
     </Card>
   );
