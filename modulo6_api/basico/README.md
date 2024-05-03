@@ -1,8 +1,37 @@
 # Ejercicio 2
 
-Este ejercicio es la continuación al ejercicio 1 del ejercicio básico del módulo API REST
+# Laboratorio REST API
 
-Montamos un json-server local (borramos la colección de hotels previa). Corriendo en localhost:3000
+## Introducción
+
+Vamos a consumir una API pública para mostrar datos de la serie Rick & Morty
+
+```
+https://rickandmortyapi.com/
+```
+
+Para simular escrituras vamos a utilizar un servidor local json-server
+
+Cómo punto de entrada vamos a partir del Boilerplate:
+
+00-boilerplate
+
+Tendrás que:
+
+- Cambiar las escenas, rutas y pods a character-collection y character
+
+- Actualizar el json-server
+
+### Ejercicio 1
+
+Crear un proyecto en el que vamos a obtener una lista de actores de la API Rest de Rick & Morty, (utilizando Axios o Fetch)
+
+Navegando a la página de un character vamos a mostrar el detalle del mismo (segunda llamada a la API Rest).
+
+### Ejercicio 2
+
+Montamos un json-server local (borramos la colección de hotels previa).
+json-server
 
 Añadimos una colección de characters (puedes coger la información del ejercicio anterior).
 
@@ -13,19 +42,3 @@ Podéis inicializar este nuevo campo a vacío para cada personaje.
 Reemplazar los endpoints para que apunten al json-server.
 
 El usuario puede editar y guardar el campos bestSentences.
-
-# Steps to build it
-
-- `npm install` to install previous sample packages:
-
-```bash
-npm install
-```
-
-# Steps to run it
-
-- `npm start` in the main folder "ejercicio-2" to start the server in localhost:3000 and the front app in localhost:8080
-
-```bash
-npm install
-```
