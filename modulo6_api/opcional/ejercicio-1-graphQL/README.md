@@ -1,6 +1,6 @@
-# Ejercicio 1
+# Ejercicio 1 GRAPHQL
 
-Vamos a consumir una API pública para mostrar datos de la serie Rick & Morty
+Vamos a consumir una API pública para mostrar datos de la serie Rick & Morty en este caso usaremos la API de graphql
 
 https://rickandmortyapi.com/
 
