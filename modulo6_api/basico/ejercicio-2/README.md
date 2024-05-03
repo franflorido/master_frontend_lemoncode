@@ -22,9 +22,9 @@ El usuario puede editar y guardar el campos bestSentences.
 npm install
 ```
 
-# Steps Run
+# Steps to run it
 
-- `npm start` in the main folder ""ejercicio-2" to start the server in localhost:3000 and the front app in localhost:8080
+- `npm start` in the main folder "ejercicio-2" to start the server in localhost:3000 and the front app in localhost:8080
 
 ```bash
 npm install
