@@ -1,5 +1,4 @@
 import * as React from 'react';
-import Button from '@mui/material/Button';
 import { CharacterEntityVM } from './character-collection.vm';
 import { CharacterCard } from './components/character-card.component';
 import * as classes from './character-collection.styles';

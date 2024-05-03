@@ -1,9 +1,8 @@
 import React from 'react';
-import { useParams, useNavigate } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 import * as api from './api';
 import { createEmptyCharacter, Character } from './character.vm';
 import { mapCharacterFromApiToVm } from './character.mappers';
-import { Lookup } from 'common/models';
 import { CharacterComponent } from './character.component';
 
 export const CharacterContainer: React.FunctionComponent = (props) => {

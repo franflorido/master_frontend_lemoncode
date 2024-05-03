@@ -5,10 +5,6 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import CardActions from '@mui/material/CardActions';
 import Typography from '@mui/material/Typography';
-import Avatar from '@mui/material/Avatar/Avatar';
-import IconButton from '@mui/material/IconButton/IconButton';
-import EditIcon from '@mui/icons-material/Edit';
-import DeleteIcon from '@mui/icons-material/Delete';
 import { Character } from './character.vm';
 import * as classes from './character.styles';
 

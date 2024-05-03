@@ -1,8 +1,5 @@
 import Axios from 'axios';
 import { CharacterEntityApi } from './character-collection.api-model';
-//import { mockHotelCollection } from './hotel-collection.mock-data';
-
-//let hotelCollection = [...mockHotelCollection];
 
 const characterListUrl = 'https://rickandmortyapi.com/api/character';
 
