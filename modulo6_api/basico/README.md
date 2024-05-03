@@ -1,5 +1,3 @@
-# Ejercicio 2
-
 # Laboratorio REST API
 
 ## Introducción
